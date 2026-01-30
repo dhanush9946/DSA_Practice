@@ -1,9 +1,14 @@
 ﻿using DSA.Array;
+using DSA.Math;
 
 class Program
 {
     public static void Main()
     {
-        BasicOperations.Operations();
+        //Array
+        //BasicOperations.Operations();
+
+        //Math
+        OddOrEven.OddEven();
     }
 }

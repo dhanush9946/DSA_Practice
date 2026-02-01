@@ -1,4 +1,5 @@
 ﻿using DSA.Array;
+using DSA.if_loop;
 using DSA.Math;
 
 class Program
@@ -9,6 +10,7 @@ class Program
         //BasicOperations.Operations();
 
         //Math
-        OddOrEven.OddEven();
+        //OddOrEven.OddEven();
+        VowelCheck.Vowel();
     }
 }

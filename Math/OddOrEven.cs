@@ -16,8 +16,10 @@ namespace DSA.Math
             //obj.WithMulDiv();
             //ThirdMethod obj = new ThirdMethod();
             //obj.WithMinusTwo();
-            WithBitwise obj = new WithBitwise();
-            obj.WithBitwiseOperator();
+            //WithBitwise obj = new WithBitwise();
+            //obj.WithBitwiseOperator();
+            EvenOrOddWithFor obj = new EvenOrOddWithFor();
+            obj.EvenOddFor();
 
         }
     }
@@ -103,6 +105,29 @@ namespace DSA.Math
             else
             {
                 Console.WriteLine("Even Number");
+            }
+        }
+    }
+    //5.Even or Odd with for loop
+    class EvenOrOddWithFor
+    {
+        public void EvenOddFor()
+        {
+            Console.Write("Enter a number:");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for(; num >=0; num=num-2)
+            {
+                
+                if (num == 0)
+                {
+                    Console.WriteLine("Even");
+                }
+                if (num == 1)
+                {
+                    Console.WriteLine("Odd");
+                }
+                
             }
         }
     }

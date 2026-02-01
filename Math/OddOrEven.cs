@@ -14,8 +14,10 @@ namespace DSA.Math
             //obj.WithModulus();
             //SecondMethod obj = new SecondMethod();
             //obj.WithMulDiv();
-            ThirdMethod obj = new ThirdMethod();
-            obj.WithMinusTwo();
+            //ThirdMethod obj = new ThirdMethod();
+            //obj.WithMinusTwo();
+            WithBitwise obj = new WithBitwise();
+            obj.WithBitwiseOperator();
 
         }
     }
@@ -84,5 +86,24 @@ namespace DSA.Math
             }
         }
          
+    }
+
+    //4.we can find odd or even with Bitwise operator
+   public class WithBitwise
+    {
+        public void WithBitwiseOperator()
+        {
+            Console.Write("Enter a number:");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            if((num & 1) == 1)
+            {
+                Console.WriteLine("Odd Number");
+            }
+            else
+            {
+                Console.WriteLine("Even Number");
+            }
+        }
     }
 }

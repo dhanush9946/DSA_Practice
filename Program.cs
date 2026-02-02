@@ -11,6 +11,7 @@ class Program
 
         //Math
         //OddOrEven.OddEven();
-        VowelCheck.Vowel();
+        // VowelCheck.Vowel();
+        Basics.IfLoop();
     }
 }

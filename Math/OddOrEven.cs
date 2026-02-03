@@ -18,8 +18,9 @@ namespace DSA.Math
             //obj.WithMinusTwo();
             //WithBitwise obj = new WithBitwise();
             //obj.WithBitwiseOperator();
-            EvenOrOddWithFor obj = new EvenOrOddWithFor();
-            obj.EvenOddFor();
+            //EvenOrOddWithFor obj = new EvenOrOddWithFor();
+            //obj.EvenOddFor();
+            Prime.PrimeWithBroothforce();
 
         }
     }
@@ -129,6 +130,34 @@ namespace DSA.Math
                 }
                 
             }
+        }
+    }
+
+    //Prime number brootforce
+    class Prime
+    {
+        public static void PrimeWithBroothforce()
+        {
+            Console.WriteLine("Enter a number");
+            int n = Convert.ToInt32(Console.Read());
+            bool flage = true;
+            
+            for (int i = 2; i < n;i++ )
+            {
+               
+
+                if (n % i == 0)
+                {
+                    Console.WriteLine("Not a prime number");
+                    flage = false;
+                    break;
+                }
+            }
+            if (flage)
+            {
+                Console.WriteLine("Prime number");
+            }
+
         }
     }
 }

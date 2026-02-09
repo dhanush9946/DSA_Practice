@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,9 +16,11 @@ namespace DSA.Array
             //Reverse obj = new Reverse();
             //obj.Reversing();
 
-            SumOfAll obj = new SumOfAll();
-            obj.Sum();
+            //SumOfAll obj = new SumOfAll();
+            //obj.Sum();
 
+            Problems.Max();
+           
 
         }
     }
@@ -64,6 +67,26 @@ namespace DSA.Array
                 sum += i;
             }
             Console.WriteLine($"The Total sum of the elements is:{sum}");
+        }
+    }
+    class Problems
+    {
+        static int[] arr = { 1, 23, 5, 7, 3, 45, 8 };
+        //6.Find the largest element
+        public static int Max()
+        {
+            int max = arr[0];
+            for(int i = 1; i <= arr.Length - 1; i++)
+            {
+                if (max < arr[i])
+                {
+                    max = arr[i];
+
+                }
+            }
+            Console.WriteLine(max);
+            return max;
+            
         }
     }
 }

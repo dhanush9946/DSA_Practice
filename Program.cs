@@ -4,6 +4,7 @@ using DSA.Math;
 using DSA.Recursion;
 using DSA.Search;
 using DSA.Sorting;
+using DSA.String;
 
 class Program
 {
@@ -18,6 +19,7 @@ class Program
         //Basics.IfLoop();
         //RecursionProblems.Problems();
         //Sorts.sortings();
-        Searchings.search();
+        // Searchings.search();
+        Strings.StringOperations();
     }
 }
